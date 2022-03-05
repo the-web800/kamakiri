@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>世界のカマキリ大集合</title>
+        <meta charset="utf-8">
+        <script>
+            function abc(){
+                document.getElementById('ihhihhizone').style.display = 'none';
+                document.body.style.backgroundColor = 'white';
+                document.getElementById('threesec').innerHTML = "どうだった？<br><a href='https://qu-iz.jimdofree.com' style='font-size:0.5em;'>トップへ</a>"
+            }
+            window.addEventListener('DOMContentLoaded',function(){
+                setTimeout(() =>{
+                    document.getElementById("ihhihhizone").innerHTML = "<p style='background-color:white; margin:0pt 0pt 0pt 0pt;'>ご利用ありがとうございます。<br>お名前を登録しました。<p style='color:blue; font-size:0.7cm; background-color:white; margin-top:0.2em; cursor:pointer;' onclick='abc()'>閉じる</p></p>";
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+                    document.getElementById("ihhihhizone").style.backgroundColor = 'white';
+                }
+                ,5000);
+            });
+        </script>
+        <style>
+            html{
+                font-family: sans-serif;
+                text-align: center;
+                position: relative;
+            }
+            #all{
+                background-color: none;
+            }
+            #threesec{
+                font-size: 3cm;
+            }
+            #ihhihhizone{
+                position: absolute;
+                width:50%;
+                height:30%;
+                font-size: 1cm;
+                top:40%;
+                left:25%;
+            }
+        </style>
+    </head>
+    <body id="all">
+        <div class="main">
+            <p id="threesec">３秒待っててね。</p>
+            <div id="ihhihhizone">
+            </div>
+        </div>
+    </body>
+</html>
